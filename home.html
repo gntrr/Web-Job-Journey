@@ -1,0 +1,274 @@
+<!-- Bagian kerangka website -->
+<!-- Berisi informasi judul halaman, link file CSS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Ganti bagian title sesuai dengan halaman yang ingin dibuat -->
+    <title>Beranda - Job Journey</title>
+
+    <!-- lokasi file CSS Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- lokasi file CSS Uicons -->
+    <link rel="stylesheet" href="assets/uicons/webfonts/uicons-regular-rounded.css">
+
+    <!-- Script JS -->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom Style -->
+    <style>
+         #fixed {
+            line-height: 0.5em;
+            vertical-align: -0.15em;
+            display: inline-flex;
+        }
+        .jumbotron {
+            width: 100%;
+            height: 90vh;
+            background: url("assets/img/bg-jumbotron.jpeg") no-repeat center center;
+            background-size: cover;
+            position: relative;
+            padding-top: 82px;
+        }
+    </style>
+
+</head>
+
+<!-- Isi dari halaman website ada di bagian berikut -->
+<body>
+    <!-- Bagian Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top shadow">
+        <div class="container">
+            <a class="navbar-brand">
+                <img src="assets/img/logo.png" alt="Logo Job Journey" width="80">
+            </a>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                    <a class="nav-link active fw-medium" aria-current="page" href="home.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link fw-medium" href="#">Lowongan</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link fw-medium" href="#">Panduan Karir</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link fw-medium" href="#">Artikel</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Bagian tombol user dengan dropdown daftar dan masuk -->
+            <div class="d-flex dropdown">
+                <a class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fi fi-rr-user" id="fixed"></i>
+                    Pengguna
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Profil Saya</a></li>
+                    <li><a class="dropdown-item" href="#">Pengaturan</a></li>
+                    <li><a class="dropdown-item text-danger" href="/">Keluar</a></li>
+                  </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!--  Bagian Main Content -->
+    <main>
+        <!-- Bagian Jumbotron -->
+        <section class="jumbotron" class="d-flex align-items-center">
+            <div class="container">
+              <div class="row">
+                <div class="col-xl-6">
+                  <h1 class="text-white fw-bold mb-3">Temukan Pekerjaan Impianmu dengan Job Journey</h1>
+                  <h4 class="text-white fw-normal">Dapatkan pekerjaan cocok dengan profil anda hari ini</h4>
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Posisi atau Perusahaan" aria-label="Search">
+                    <button class="btn btn-primary d-flex align-items-center justify-content-center" type="submit">
+                        <i class="fi fi-rr-search pe-2" id="fixed"></i>Cari
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </section>
+
+        <!-- Bagian Konten -->
+        <!-- Informasi Job Fair -->
+        <section class="container my-5">
+            <h2 class="fw-bold mb-4">Informasi Job Fair</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="assets/img/jobfair-1.jpeg" class="card-img-top" alt="Job Fair 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Podcast</h5>
+                            <p class="card-text">Sharing session dalam format webinar dan podcast bersama profesional dari berbagai bidang, membahas beragam topik terkait pengembangan karir dan seputar dunia kerja.</p>
+                            <a href="#" class="btn btn-primary">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="assets/img/jobfair-2.jpeg" class="card-img-top" alt="Job Fair 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Class Session</h5>
+                            <p class="card-text">Siapkan telinga Anda dan bersiaplah untuk meraih pengetahuan baru setiap minggunya. Mari bersama-sama menjelajahi dunia kerja dan menginspirasi satu sama lain untuk mencapai potensi penuh kita.</p>
+                            <a href="#" class="btn btn-primary">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card shadow">
+                        <img src="assets/img/jobfair-3.jpg" class="card-img-top" alt="Job Fair 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Kelas Bahasa</h5>
+                            <p class="card-text">Anda akan diajak dalam sebuah perjalanan belajar yang mengasyikkan dan informatif untuk meningkatkan kemampuan bahasa Anda. Sangat berguna untuk mempersiapkan karir anda.</p>
+                            <a href="#" class="btn btn-primary">Lihat Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Bagian Artikel Seputar Dunia Kerja -->
+        <section class="container my-5">
+            <h2 class="fw-bold mb-4">Artikel Seputar Dunia Kerja</h2>
+                <div class="col">
+                    <div class="card mb-3 shadow" style="max-width: 100%;">
+                        <div class="row g-0">
+                            <div class="col">
+                            <img src="/assets/img/artikel-1.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="badge text-bg-secondary text-white text-wrap d-flex justify-content-center align-items-center mb-2" style="width: 6rem;height: 2rem;">
+                                    Kategori
+                                </div>
+                                <h5 class="card-title">Implikasi HAM dalam Pencarian Kerja dan Perlindungan Sosial di Indonesia</h5>
+                                <p class="card-text">Dalam dunia kerja, hak asasi manusia (HAM) menjadi hal yang sangat penting. HAM adalah hak yang melekat pada diri manusia sejak lahir dan tidak dapat dihilangkan. Hak asasi manusia ini meliputi hak untuk hidup, hak untuk bebas dari penyiksaan, hak untuk mendapatkan pekerjaan, hak untuk mendapatkan pendidikan, hak untuk mendapatkan perlindungan hukum, dan hak untuk mendapatkan perlindungan sosial.</p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3 shadow" style="max-width: 100%;">
+                        <div class="row g-0">
+                            <div class="col">
+                            <img src="/assets/img/artikel-2.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="badge text-bg-secondary text-white text-wrap d-flex justify-content-center align-items-center mb-2" style="width: 6rem;height: 2rem;">
+                                    Kategori
+                                </div>
+                                <h5 class="card-title">Perbedaan Talent Acquisition vs Rekrutmen</h5>
+                                <p class="card-text">Talent Acquisition dan Rekrutmen adalah dua hal yang berbeda. Talent Acquisition adalah proses yang lebih luas dan strategis, sedangkan Rekrutmen adalah proses yang lebih spesifik dan taktis. Talent Acquisition adalah proses yang lebih luas dan strategis, sedangkan Rekrutmen adalah proses yang lebih spesifik dan taktis.</p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-5 shadow" style="max-width: 100%;">
+                        <div class="row g-0">
+                            <div class="col">
+                            <img src="/assets/img/artikel-3.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="badge text-bg-secondary text-white text-wrap d-flex justify-content-center align-items-center mb-2" style="width: 6rem;height: 2rem;">
+                                    Kategori
+                                </div>
+                                <h5 class="card-title">Ada Apa dengan (Diskriminasi) Pembatasan Usia?</h5>
+                                <p class="card-text">Pembatasan usia dalam dunia kerja seringkali menjadi topik yang menarik untuk dibahas. Hal ini karena pembatasan usia dapat berdampak pada kesempatan kerja seseorang. Pembatasan usia dalam dunia kerja seringkali menjadi topik yang menarik untuk dibahas. Hal ini karena pembatasan usia dapat berdampak pada kesempatan kerja seseorang.</p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Bagian Form Kontak -->
+        <div class="bg-body-secondary mt-5">
+            <section class="container py-5">
+                <h2 class="fw-bold mb-2">Hubungi Kami</h2>
+                <p class="mb-5">Jika Anda ingin bermitra atau bekerja sama, silakan hubungi kami melalui formulir di bawah ini. Kami akan segera merespon pesan Anda.</p>
+                <form>
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="nama-depan" class="form-label">Nama Depan</label>
+                                <input type="text" class="form-control" id="nama-depan" aria-describedby="namaDepanHelp">
+                                <div id="namaDepanHelp" class="form-text">Masukkan nama depan Anda</div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="nama-belakang" class="form-label">Nama Belakang</label>
+                                <input type="text" class="form-control" id="nama-belakang" aria-describedby="namaBelakangHelp">
+                                <div id="namaBelakangHelp" class="form-text">Masukkan nama belakang Anda</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">Masukkan alamat email yang valid</div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="mb-3">
+                                <label for="telepon" class="form-label">Telepon</label>
+                                <input type="tel" class="form-control" id="telepon" aria-describedby="teleponHelp">
+                                <div id="teleponHelp" class="form-text">Masukkan nomor telepon yang dapat dihubungi</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-5">
+                        <label for="pesan" class="form-label">Pesan</label>
+                        <textarea class="form-control" id="pesan" rows="6"></textarea>
+                    </div>
+                    <div class="d-flex justify-content-center">
+                        <button type="submit" class="btn btn-lg btn-primary">Kirim Pesan</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+
+        <!-- Bagian Footer -->
+        <!-- Berisi logo dan deskripsi perusahaan, beberapa sitelink, dan bagian copyright footer -->
+        <footer class="bg-dark text-white text-center pt-5 pb-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="assets/img/logo-light.png" alt="Logo Job Journey">
+                        <p class="mt-3">"Menuju Sukses Karier dengan Solusi Terbaik."</p>
+                    </div>
+                    <div class="col">
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white">Beranda</a></li>
+                            <li><a href="#" class="text-white">Lowongan</a></li>
+                            <li><a href="#" class="text-white">Panduan Karir</a></li>
+                            <li><a href="#" class="text-white">Artikel</a></li>
+                    </div>
+                    <div class="col">
+                        <ul class="list-unstyled align-items-center">
+                            <li><a href="#" class="text-white">Tentang Kami</a></li>
+                            <li><a href="#" class="text-white">Hubungi Kami</a></li>
+                            <li><a href="#" class="text-white">Kebijakan Privasi</a></li>
+                            <li><a href="#" class="text-white">Syarat dan Ketentuan</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <p class="mt-4">© 2024 Job Journey. All rights reserved.</p>
+            </div>
+        </footer>
+
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page - Job Journey</title>
+    <link rel="stylesheet" href="/assets/css/color-login.css">
+    <link rel="stylesheet" href="/assets/css/bootstrap.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="logo">
+            <img src="/assets/img/gambar.png" alt="Image">
+        </div>
+
+        <div class="login-form">
+            <div class="login-form">
+
+                <div class="logo-small">
+                    <img src="/assets/img/logo.png" alt="Tempat Logo">
+                </div>
+
+                <h1>Login to your Account</h1>
+                <h5 class="h5">See what is going on with your business</h5>
+
+                <button class="login-google-btn" onclick="loginWithGoogle()">
+                    <img class="google" src="/assets/img/google.png" alt="Logo Google"> Login with Google
+                </button>
+
+                <form action="#">
+                <div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+
+                    <input type="checkbox" id="rememberMe" name="rememberMe">
+                    <label for="rememberMe">Remember Me</label>
+                    <span class="forgot-password">Lupa Password?</span>
+                </div>
+
+                <div class="Login">
+                    <button type="submit" onclick="loggedIn()">
+                        Login
+                    </button>
+                </div>
+
+                </form>
+                <div class="register-link">
+                    <a href="/register.html" class="belumpunya">Belum punya akun? <span class="daftarnow">Daftar sekarang</span></a>
+                </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            function loginWithGoogle() {
+                // Add your login with Google logic here
+                alert("Anda berhasil masuk");
+                window.location.href = "/home.html";
+            }
+            function loggedIn() {
+                // Add your login logic here
+                alert("Anda berhasil masuk");
+                window.location.href = "/home.html";
+            }
+        </script>
+</body>
+</html>

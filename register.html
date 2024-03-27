@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Job Journey</title>
+    <script src="https://kit.fontawesome.com/48f293d334.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/assets/css/style-register.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <img src="/assets/img/gambar1.png" alt="Image">
+        </div>
+        <div class="form-container sign-up-container">
+            <div>
+                <form action="#">
+                    <h1>Welcome to Job Journey</h1>
+                    <span>Full name</span>
+                    <input type="text" id="full-name" name="full-name" placeholder="enter your name">
+                    <span>Email</span>
+                    <input type="email" id="email" name="email" placeholder="enter your email">
+                    <span>Password</span>
+                    <input type="password" id="password" name="password" placeholder="enter your password ">
+                    <button onclick="signedUp()">
+                        Create Account
+                    </button>
+                </form>
+                <p>Already have an account? <a href="/">Login</a></p>
+                <p>OR</p>
+                <div class="social-buttons">
+                    <button class="google-btn" onclick="signupWithGoogle()"><i class="fab fa-google"></i>Sign up with Google</button>
+                    <button class="github-btn" onclick="signupWithGithub()"><i class="fab fa-github"></i>Sign up with GitHub</button>
+                </div>
+            </div> 
+        </div>
+    </div>
+    <script>
+        function signedUp() {
+            alert("Akun berhasil dibuat, silahkan login");
+            window.location.href = "index.html";
+        }
+        function signupWithGoogle() {
+            alert("Akun terdaftar dengan akun Google, silahkan login");
+            window.location.href = "index.html";
+        }
+        function signupWithGithub() {
+            alert("Akun terdaftar dengan akun Github, silahkan login");
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>
