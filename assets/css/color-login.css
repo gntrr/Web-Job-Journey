@@ -13,21 +13,34 @@ body {
     max-width: 1200px;
     margin: 50px auto;
     display: flex;
+    font-weight: bold;
 }
 
 .logo {
-    flex: 1;
-    padding-right: 20px;
+    position: relative; /* Tambahkan ini untuk membuat posisi absolut relatif terhadap elemen ini */
+    text-align: center;
+    background-color: white;
 }
+
+figcaption {
+    margin-top: 0;
+}
+
+.MOTTO {
+    bottom: 0; /* Letakkan di bagian bawah gambar */
+    left: 0; /* Agar terletak di sebelah kiri gambar */
+    right: 0; /* Agar terletak di sebelah kanan gambar */
+    margin : auto;
+    font-size: 30px;
+    color: #1233ee;
+    font-style: italic;
+}
+
 
 .logo img {
     max-width: 100%;
-    height: 95%;
+    height: 70vh;
     width: 100%;
-    border: 2px solid black; /* Atur ketebalan dan warna bingkai */
-    border-radius: 5px; /* Atur sudut border */
-    padding: 1px; /* Atur jarak antara gambar dan border */
-    margin-right: 10px;
 }
 
 .logo-small {
@@ -39,6 +52,11 @@ body {
 .logo-small img {
     max-width: 100px;
     height: auto;
+}
+
+.login-heading {
+    margin-bottom: 20px;
+    color: #1233ee;
 }
 
 .login-form {
@@ -55,6 +73,7 @@ body {
 
 .form-group {
     margin-bottom: 20px;
+    color: #1233ee;
 }
 
 .form-group label {
@@ -72,10 +91,11 @@ body {
 
 button {
     display: block;
-    width: 100%;
+    width: 50%;
+    margin: 0 auto;
     padding: 10px;
-    background-color: #007bff;
-    color: #fff;
+    background-color: #eab21f;
+    color: #1233ee;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -84,63 +104,17 @@ button {
     transition: background-color 0.3s ease;
 }
 
-.h5 {
-    margin-top: 10px;
-}
-
 button:hover {
-    background-color: #0056b3;
+    background-color: #ffd51c;
 }
 
-.login-google-btn {
-    background-color: #1233ee;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    width: 50%;
-    margin-left: 120px;
-    margin-top: 30px;
-    margin-bottom: 20px;
-    border-radius: px;
-    border: 1px solid #fd00009a
-}
-
-.login-google-btn:hover {
-    background-color: #007bff;
-    border-color: 999;
-}
-
-.google {
-    max-width: 20px; /* Ukuran maksimum untuk logo kecil */
-    height: auto;
-    margin-right: 10px;
-}
-
-#rememberMe {
-    accent-color: blue;
-}
-
-.forgot-password {
-    float: right;
-    font-size: 14px;
-    color: #007bff;
-    cursor: pointer;
-}
-
-.forgot-password:hover {
-    text-decoration: underline;
-}
-
-.Login{
+.Login {
     margin-top: 30px;
 }
 
 .register-link {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 10px;
 }
 
 .register-link span:hover {
@@ -149,16 +123,34 @@ button:hover {
 
 .belumpunya {
     color: rgb(90, 83, 83);
+    font-size: 15px;
 }
 
 .daftarnow {
     cursor: pointer;
-    color: black;
+    color: #1233ee;
     font-weight: bold;
+    font-size: 15px;
 }
 
-body {
-    background-color: #fff; /* Warna latar belakang putih */
-    margin: 0;
-    padding: 0;
+.OR {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.social-box {
+    display: flex;
+    justify-content: space-around; /* Menyebarkan item di sepanjang sumbu utama */
+    margin-top: 20px;
+}
+
+.social-box-item {
+    text-align: center;
+    padding: 0px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 230px;
+    height: 73px;
+    cursor: pointer;
 }

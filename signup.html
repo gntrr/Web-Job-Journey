@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Signup Page - Job Journey</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="assets/fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+</head>
+<body>
+
+    <div class="main">
+
+        <!-- Sing up Form -->
+        <section class="sign-up">
+            <div class="container">
+                <div class="signup-content">
+                    <div class="signup-image">
+                        <figure><img src="assets/img/DAFTARR.jpg" alt="sing up image" width="400px"></figure>
+                        <figcaption class="MOTTO text-center fw-bold">"Find Your Dream Job!"</figcaption>
+                    </div>
+
+                    <div class="signin-form">
+                        <div class="logo-small">
+                            <img src="assets/img/logo.png" alt="Tempat Logo">
+                        </div>
+                        <h2 class="form-title">Sign up</h2>
+                        <form method="POST" class="register-form" id="login-form">
+                            <div class="form-group">
+                                <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="your_name" id="your_name" placeholder="Nama Lengkap*"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="your_email"><i class="zmdi zmdi-email"></i></label>
+                                <input type="email" name="your_email" id="your_email" placeholder="Alamat Email*"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" name="your_pass" id="your_pass" placeholder="Kata Sandi*"/>
+                            </div>
+                            <div class="form-group form-button text-center">
+                                <input type="submit" name="signup" id="signup" class="form-submit" value="Buat Akun Baru" onclick="signedUp()"/>
+                            </div>
+                            <p class="text-center">Sudah punya akun? <a href="/">Login</a></p>
+                        </form>
+                        <div class="social-login">
+                            <span class="social-label">Atau buat akun dengan</span>
+                            <ul class="socials">
+                                <li><a href="#" onclick="signedUpWithGoogle()"><i class="display-flex-center zmdi zmdi-google"></i></a></li>
+                                <li><a href="#" onclick="signedUpWithGithub()"><i class="display-flex-center zmdi zmdi-github"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        function signedUp() {
+            alert("Akun berhasil dibuat, silahkan login");
+            window.location.href = "index.html";
+        }
+        function signedUpWithGoogle() {
+            alert("Akun berhasil dibuat dengan Google, silahkan login");
+            window.location.href = "index.html";
+        }
+        function signedUpWithGithub() {
+            alert("Akun berhasil dibuat dengan Github, silahkan login");
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>
