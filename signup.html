@@ -45,7 +45,7 @@
                                 <input type="password" name="your_pass" id="your_pass" placeholder="Kata Sandi*"/>
                             </div>
                             <div class="form-group form-button text-center">
-                                <input type="submit" name="signup" id="signup" class="form-submit" value="Buat Akun Baru" onclick="signedUp()"/>
+                                <input type="submit" name="signup" id="signup" class="form-submit" value="Buat Akun Baru" onclick="signedUp(event)"/>
                             </div>
                             <p class="text-center">Sudah punya akun? <a href="/">Login</a></p>
                         </form>
@@ -69,6 +69,7 @@
 
     <script>
         function signedUp() {
+            event.preventDefault();
             alert("Akun berhasil dibuat, silahkan login");
             window.location.href = "index.html";
         }
